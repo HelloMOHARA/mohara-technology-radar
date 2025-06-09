@@ -2,7 +2,7 @@
 title: "v0 Model API"
 ring: assess
 quadrant: ai
-featured: false
+featured: true
 tags: [AI, Code Generation, Web Development, API, Frontend]
 ---
 
