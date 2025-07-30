@@ -22,7 +22,12 @@ export function getAppName() {
 }
 
 export function getLogoUrl() {
-  return assetUrl("/" + config.logoFile);
+  return assetUrl(config.logoFile);
+}
+
+export function getJsUrl(): string {
+  if (!config.jsFile) return "";
+  return assetUrl(config.jsFile);
 }
 
 export function getChartConfig() {
@@ -40,6 +45,10 @@ export function getFlags() {
 export function getFlag(flag: Flag) {
   return config.flags[flag];
 }
+
+export const getFuzzySearchConfig = () => {
+  return config.fuzzySearch;
+};
 
 export function getRings(): Ring[] {
   return config.rings;
